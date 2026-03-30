@@ -219,6 +219,10 @@
   </style>
 </head>
 <body>
+  <audio id="music" loop>
+  <source src="https://files.catbox.moe/wpdnx9.mp3" type="audio/mpeg">
+  </audio>
+  
   <div class="blur"></div>
 
   <div class="container">
@@ -374,5 +378,12 @@
       noteEl.textContent = "gapapa, makasih ya udah baca sampai akhir 🌷";
     }
   </script>
+  
+  <script>
+document.addEventListener("click", () => {
+  const music = document.getElementById("music");
+  music.play();
+}, { once: true });
+</script>
 </body>
   </html>
